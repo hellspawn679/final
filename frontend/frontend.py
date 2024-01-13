@@ -59,7 +59,7 @@ if st.button('Send to FastAPI'):
     st.write(file_data['data'])
     if file_data is not None:
         try:
-            response = requests.post('http://127.0.0.1:8000//upload/', json=file_data)
+            response = requests.post('http://127.0.0.1:8000/upload/', json=file_data)
             
         except Exception as e:
             st.write("Error:", e)
